@@ -1,0 +1,507 @@
+@import url("../font-awesome/css/font-awesome.css");
+@import url("../bootstrap/bootstrap-social/bootstrap-social.css");
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #fff;
+}
+
+div {
+	/*border-radius: 0 !important;*/
+}
+
+h1,
+h2,
+h3 {
+	color: #999;
+	font-family: "Open Sans script=all rev=1", sans-serif;
+	font-weight: 300;
+}
+
+.btn-primary {
+	background-color: #598527;
+	border-color: #598527;
+}
+
+.logo a {
+	margin-left: 0;
+}
+
+.hero .jumbotron {
+	/* background: url('http://www.crowdness.io/wp-content/uploads/2018/08/indiegogo-wp-phone-large-banner-1-1200x860.png') no-repeat center; */
+	/* background-color: #fafafa; */
+	/* background-size: 100% auto; */
+	border: 1px solid #598527;
+	/*min-height: 150px;*/
+	height: 180px;
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.signup-form {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem 0;
+}
+
+.form-group {
+	margin: 0;
+}
+
+.fa-heart {
+	color: #f00;
+}
+
+.logo {
+	font-family: Avenir Medium, Arial;
+	color: #598527;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+/*h1:after {
+	color: #333;
+	font-family: sans-serif;
+	font-weight: 100;
+	content: "with Polly";
+	display: inline;
+	position: absolute;
+	font-size: 15px;
+	margin-top: 18px;
+	margin-left: 6px;
+}*/
+
+.page-header {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.hero {
+	/*padding: 20px;*/
+	/*height: 400px;*/
+}
+
+.hero .cta {
+	position: absolute;
+	top: 50%;
+	left: calc(50% - 125px);
+}
+
+.hero .form-group {
+	margin-left: auto;
+	margin-right: auto;
+}
+.hero .form-group input {
+	text-align: center;
+	display: inline-block;
+}
+
+/*carousel */
+.carousel.slide {
+	/*width: 300px;*/
+	/*height: 500px;*/
+	/*background-color: #eee;*/
+	margin: auto;
+}
+.app-carousel {
+}
+.phone-window {
+	border: 1px solid #333;
+	width: 300px;
+}
+.user-videos {
+	background-color: #ddd;
+	height: 400px;
+	width: 300px;
+}
+.user-videos:nth-child(2n+1) {
+	background-color: #eee;
+}
+
+/*flexbox */
+.flex {
+	display: flex;
+	flex: 1 1 0;
+}
+
+.flex div {
+	margin: auto;
+}
+
+/*header*/
+header {
+	padding: 0;
+	background-color: #fdfdfd;
+}
+
+.affix {
+	position: fixed !important;
+	width: 100%;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.99);
+	border-bottom: 1px solid #eee;
+}
+header nav {
+	text-align: center;
+}
+header .col-xs-12 {
+	text-align: left;
+}
+
+.navbar {
+	border: none;
+	text-align: center;
+	position: static !important;
+	float: none;
+}
+
+.navbar-nav>li {
+	float: none;
+	display: inline-block;
+}
+
+header .nav-pills>li.active>a,
+header .nav-pills>li.active>a:focus,
+header .nav-pills>li.active>a:hover {
+	background-color: transparent;
+	color: #598527;
+	font-weight: 600;
+}
+header .nav>li>a,
+header .nav>li>a:focus,
+header .nav>li>a:hover {
+	background-color: transparent;
+	color: #999;
+	/*font-weight: 100;*/
+}
+
+.nav-pills>li {
+	display: inline-block;
+	float: none;
+
+}
+
+header .col{
+	text-align: center;
+}
+
+.btn-angel {
+	background: grey;
+}
+
+.btn-social-icon {
+	margin: 10px 10px 10px 0;
+  display: inline-block;
+}
+
+.btn-social-icon.btn-xs>:first-child {
+	height: 20px !important;
+	width: 14px !important;
+	margin: 0 2px;
+}
+
+.sub-nav>li>a {
+	padding: 10px 15px 10px 0;
+}
+
+.nav>li {
+	display: inline-block;
+}
+
+header .container {
+	padding: 10px 0;
+}
+
+.container.full-width {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+/*cta*/
+.cta h1 {
+	text-align: center;
+	color: #ccc;
+}
+.cta .buttons {
+	text-align: center;
+}
+
+.cta-container {
+	/* display: flex; */
+}
+
+.cta-rounded-left {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	border-radius: 1rem 0 0 1rem;
+}
+
+.cta-rounded-right {
+	background: #fff;
+	border-radius: 0 1rem 1rem 0;
+}
+
+.cta-container .jumbotron .row {
+	margin: 5rem auto;
+	width: 85%;
+}
+
+.cta-container .jumbotron .row:first-child {
+	margin-top: 0;
+}
+
+.cta-container .jumbotron .row:last-child {
+	margin-bottom: 0;
+}
+
+.cta-container .jumbotron h1 {
+	color: #999;
+	font-size: 32px;
+	text-align: center;
+}
+
+.cta-container .jumbotron h2 {
+	margin: 0;
+	/*padding-top: 12rem;*/
+	font-size: 32px;
+	text-align: center;
+}
+
+.cta-container .jumbotron p {
+	font-size: 1.4rem;
+	padding-top: 1rem;
+	line-height: 2.2rem;
+}
+
+.cta-container .jumbotron .next-section {
+	border: 1px solid #eee;
+	color: inherit;
+	padding: 1rem;
+}
+
+/*footer*/
+footer {
+	border: 1px solid #eee;
+	padding: 3rem;
+	margin: 2rem;
+	display: block;
+}
+
+footer li > h3,
+footer li > h3 > a {
+	color: inherit;
+	margin-top: 0;
+}
+
+footer li > a {
+	text-decoration: none;
+	color: inherit;
+}
+
+footer li > a:hover,
+footer li > a:active,
+footer li > a:visited,
+footer li > h3 > a:hover,
+footer li > h3 > a:active,
+footer li > h3 > a:visited {
+	color: inherit;
+}
+
+/*helpers*/
+.border-left {
+	border-left: 1px solid #eee;
+}
+.border-right {
+	border-right: 1px solid #eee;
+}
+
+.border-rounded {
+	border-radius: 1rem;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.text-h3 {
+	font-size: 1.8rem;
+}
+
+.content {
+	padding: 1rem 0;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+
+.margin-top {
+	margin-top: 1rem;
+}
+.margin-left {
+	margin-left: 1rem;
+}
+
+.flags-list ul li {
+	margin: .5rem;
+}
+
+.profile-img {
+	height: 150px;
+	width: 150px;
+	margin: 1rem auto;
+	border-radius: 10rem;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+.profile-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.signup-form .col-md-4 {
+	/* padding: 1rem; */
+	text-align: center;
+}
+
+.download-button {
+	background-color: #333;
+	color: #fff;
+	font-weight: 900;
+	display: inline-block;
+	padding: 20px;
+}
+
+.app-slash {
+	background-image: url('../img/map-bg.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+}
+
+.app-three-up {
+  width: 90%;
+}
+
+.social-links {
+	display: none;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.lang-list {
+	border: 2px solid #999;
+	border-radius: 1rem;
+	display: inline-block;
+	list-style: none;
+	margin: 0 1rem;
+	padding: 1rem;
+}
+
+.lang-list li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 1rem;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.nav {
+		text-align: left;
+	}
+	header .col {
+		text-align: center;
+	}
+	header .col:first-child {
+		text-align: left;
+	}
+	header .col:last-child {
+		text-align: right;
+	}
+	.hero .jumbotron {
+		background-position: top center;
+		height: 300px;
+	}
+	.logo a {
+		margin-left: 12px;
+	}
+	.cta-container h1,
+	.cta-container h2,
+	.cta-container h3 {
+		margin-bottom: 5rem;
+		width: 100%;
+	}
+	.social-links {
+		display: block;
+	}
+	.display-flex {
+		display: flex;
+	}
+
+	.flex {
+		flex: 1;
+	}
+
+	.flex-center {
+		align-items: center;
+	}
+
+	.margin-top {
+		margin-top: 6rem;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.hero .jumbotron {
+		background-position: top center;
+		height: 450px;
+	}
+
+	.signup-form .col-md-4:first-child {
+		text-align: right;
+	}
+	.signup-form .col-md-4:last-child {
+		text-align: left;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.hero .jumbotron {
+		background-position: top center;
+		height: 526px;
+	}
+}
