@@ -15,19 +15,18 @@
 //   console.log('setIframe',setIframe.innerWidth());
 // });
 
-var picker = $('i.lang-picker');
-var langs = [
-  {"English": "Afar", "alpha2": "aa"},
-  {"English": "Abkhazian", "alpha2": "ab"}
-];
+var mylangs = JSON.parse(data),
+    ul = document.createElement( "ul" ),
+    li = document.createElement( "li" ),
+    ul = $("<ul class='lang-list'>"), // create a new ul element
+    i = 0,
+    minimum = 0,
+    maximum = mylangs.length;
 
-var ul = document.createElement( "ul" );
-    li = document.createElement( "li" );
+setInterval(function() {
+  var rnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum,
+      words = mylangs[rnumber].English,
+      picker = $('.lang-picker i').animate({width: words.length + "em", duration: 2000}).addClass("active");
 
-    ul = $("<ul class='lang-list'>"); // create a new ul element
-
-// iterate over the array and build the list
-for (var i = 0, l = langs.length; i < l; ++i) {
-    ul.append("<li>"+ langs[i].English + "</a></li>");
-}
-$(picker).append(ul);
+  picker.text(words);
+}, 2000);

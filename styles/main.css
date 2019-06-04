@@ -17,6 +17,35 @@ h3 {
 	font-family: "Open Sans script=all rev=1", sans-serif;
 	font-weight: 300;
 }
+/*
+bgPrimary100: '#4b0049',
+bgPrimary50: '#380037',
+bgPrimary0: '#783273',
+bgSecondary100: '#333',
+bgSecondary50: '#8E8E8E',
+bgSecondary0: '#ebedf1',
+bgMid: '#380037',
+bgSecondary: '#783273',
+textDark: '#000',
+textMid: '#555',
+textLight: '#eee',
+background: '#fcfcfc',
+// background2: '#ebedf1',
+black: '#000',
+darkGrey: '#333',
+green: '#16a085',
+lightGrey: '#ddd',
+lighterGrey: '#eee',
+midGrey: '#8E8E8E',
+navy: '#2c3e50',
+orange: '#FFA500',
+purple: '#4b0049',
+purpleAlpha: 'rgba(120,50,115,0.5)',
+darkPurple: '#380037',
+red: '#f00',
+white: '#fff',
+whiteAlpha: 'rgba(255,255,255,0.15)',
+*/
 
 .btn-primary {
 	background-color: #598527;
@@ -418,6 +447,11 @@ footer li > h3 > a:visited {
 }
 
 .lang-list {
+	display: inline-block;
+	list-style: none;
+}
+
+.lang-list li {
 	border: 2px solid #999;
 	border-radius: 1rem;
 	display: inline-block;
@@ -426,11 +460,30 @@ footer li > h3 > a:visited {
 	padding: 1rem;
 }
 
-.lang-list li {
-	display: inline-block;
-	list-style: none;
-	margin: 0;
-	padding: 0 0 0 1rem;
+.lang-picker {
+	color: #4b0049;
+	font-weight: 900;
+	font-size: 2rem;
+	line-height: 2;
+	margin: 2rem 0;
+}
+
+.lang-picker i {
+	white-space: nowrap;
+	overflow: hidden;
+	font-style: normal;
+	line-height: 2;
+	vertical-align: bottom;
+	margin-right: 1rem;
+}
+
+.lang-picker i.active {
+	border: 2px solid rgba(120,50,115,0.5);
+	border-radius: 1rem;
+}
+
+@keyframes type {
+  from { width: 0; }
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -438,6 +491,25 @@ footer li > h3 > a:visited {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	.lang-picker {
+		color: #4b0049;
+		font-weight: 900;
+		font-size: 5rem;
+		line-height: 2;
+		margin: 4rem 0;
+	}
+	.lang-picker i.active {
+		border: 4px solid rgba(120,50,115,0.5);
+		border-radius: 1rem;
+	}
+	.lang-picker i {
+		white-space: nowrap;
+		overflow: hidden;
+		font-style: normal;
+		line-height: 2;
+		vertical-align: bottom;
+		margin-right: 2rem;
+	}
 	.nav {
 		text-align: left;
 	}
